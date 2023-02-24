@@ -15,6 +15,10 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                </br>
+                 <div class="container text-center">
+                 <a class="btn btn-primary" href="{{route('postsView')}}">Enter to Posts</a>
+                </div>
                 </div>
             </div>
         </div>
