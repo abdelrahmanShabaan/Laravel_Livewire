@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Category;
 use Illuminate\Database\Seeder;
 
 class CategoriesTableSeeder extends Seeder
@@ -13,6 +14,14 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Category::create([
+            'name' => 'web development'
+        ]);
+        Category::create([
+            'name' => 'web design'
+        ]);
+        Category::create([
+            'name' => 'UI design'
+        ]);
     }
 }
