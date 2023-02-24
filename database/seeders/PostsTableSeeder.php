@@ -19,7 +19,7 @@ class PostsTableSeeder extends Seeder
     {
         $faker = Factory::create();
         for($i =1; $i <=15; $i++)
-        {
+        { 
             Post::create([
                 'user_id' => User::inRandomOrder()->first()->id,
                 'category_id' => Category::inRandomOrder()->first()->id,
