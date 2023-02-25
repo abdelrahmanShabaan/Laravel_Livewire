@@ -6,12 +6,23 @@ npm install
 
 npm run dev
 
+---------------------------------------------------------
 composer require intervention/image
+
 composer require intervention/imagecache
 
 Intervention\Image\ImageServiceProvider::class
 
 'Image' => Intervention\Image\Facades\Image::class
 
-
 $ php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravelRecent"
+----------------------------------------------------------------
+composer require livewire/livewire
+<livewire:styles />
+...
+<livewire:scripts />
+php artisan livewire:publish --config
+
+php artisan livewire:publish --assets
+
+php artisan make:livewire ShowPosts

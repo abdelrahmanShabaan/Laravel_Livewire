@@ -33,3 +33,5 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::resource('/posts', PostController::class ); 
 
 Route::get('/poster', [PostController::class , 'index'] )->name('postsView'); 
+
+Route::get('/livewire-posts' , [PostController::class , 'index_livewaire']);

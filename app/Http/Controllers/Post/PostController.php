@@ -19,6 +19,13 @@ class PostController extends Controller
         $this->middleware('auth');
     }
 
+    
+
+    public function index_livewaire()
+    {
+        return view('frontend.index_livewire');
+    }
+
     public function index()
     {
         // here i will call all of data of table  of post
