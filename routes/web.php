@@ -4,6 +4,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Post\PostController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\Posts;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,4 +35,7 @@ Route::resource('/posts', PostController::class );
 
 Route::get('/poster', [PostController::class , 'index'] )->name('postsView'); 
 
-Route::get('/livewire-posts' , [PostController::class , 'index_livewaire']);
+Route::get('/livewire/posts' , [PostController::class , 'index_livewaire']);
+
+
+Route::get('/livewire/posts/create'  , [Posts::class ,'create_post']);

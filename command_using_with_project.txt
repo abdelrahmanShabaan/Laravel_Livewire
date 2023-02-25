@@ -25,4 +25,6 @@ php artisan livewire:publish --config
 
 php artisan livewire:publish --assets
 
-php artisan make:livewire ShowPosts
+php artisan make:livewire ShowPost
+php artisan make:livewire createPost
+php artisan make:livewire createPost

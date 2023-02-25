@@ -65,16 +65,12 @@ class PostController extends Controller
 
             $data['image'] = $filename;
         }
-
         Post::create($data);
-
         return redirect()->route('posts.index')->with([
             'message' => 'Post created successfully',
             'alert-type' => 'success'
         ]);
-
     }
-
     public function show($id)
     {
         $post = Post::with(['user', 'category'])->whereId($id)->first();
